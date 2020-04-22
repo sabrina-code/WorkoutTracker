@@ -16,14 +16,6 @@ app.use(express.urlencoded({
 app.use(express.json()); // Make sure it comes back as json
 app.use(express.static("public"));
 
-//mongojs
-// const databaseUrl = "notetaker";
-// const collections = ["notes"];
-// const db = mongojs(databaseUrl, collections);
-// db.on("error", error => {
-//   console.log("Database Error:", error);
-// });
-
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/workoutDb", {
   useUnifiedTopology: true, //take away depreciated server issue
