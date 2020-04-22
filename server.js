@@ -89,50 +89,6 @@ app.listen(PORT, () => {
 
 module.exports = app;
 
-/*
-----//controller--------
-let express = require('express');
-let router = express.Router();
-
-// Home page route.
-router.get('/', function (req, res) {
-  res.send('Mountain Biking Tracker');
-  module.exports = router;
-}) */
-
-/* var homePage = require('./index.js');
-// ...
-app.use('/index.js', homePage);
- */
-
-
-
-
-
-
-/* app.get("/myplan.html", (req, res) => {
-  res.sendFile(path.join(__dirname + "./public/index.html"));
-});
-
-app.post("/submit", ({ body }, res) => {
-  const user = new User(body);
-  user.lastUpdatedDate();
-
-  User.create(user)
-    .then(dbUser => {
-      res.json(dbUser);
-    })
-    .catch(err => {
-      res.json(err);
-    });
-}); */
-
-
-
-
-
-
-
 
 /*
 const express = require("express");
