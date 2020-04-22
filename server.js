@@ -46,9 +46,6 @@ app.post("/submit", ({ body }, res) => {
   User.create(user)
     .then(dbUser => {
       res.json(dbUser); //*********This is the Devil caused me stuck */
-      // getResults(dbUser);
-      // .then(function (data) {
-      // newPlanList(data);
     })
     .catch(err => {
       res.json(err);
@@ -93,29 +90,6 @@ app.post("/update/:id", (req, res) => {
   );
 });
 
-// app.put("/update/", (req, res) => {
-//   User.update(
-//     { _id: mongojs.ObjectId(req.params.id) },
-//     { $set: { trail: req.body.trail, note: req.body.note } },
-//     (err, data) => {
-//       res.json(data);
-//     }
-//   );
-// });
-
-
-// function update() {
-//   User.findByIdAndUpdate(data_id, trail, note,
-//     // asks mongoose to return the updated version instead of the pre-updated one.
-//     { new: true },
-
-//     // the callback function
-//     (err, User) => {
-//       // Handle any possible database errors
-//       if (err) return res.status(500).send(err);
-//       return res.send(todo);
-//     })
-// }
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
