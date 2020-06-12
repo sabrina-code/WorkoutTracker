@@ -43,6 +43,7 @@ label {
   justify-content: center;
   align-items: center;
   margin-top: 60px;
+  margin-bottom: 120px;
 }
 .main {
   padding: 100px 0px;
@@ -142,10 +143,11 @@ label {
 .list_panel{
   display: inline-block;
   vertical-align: top;
-  min-height: 600px;
   border: 1px solid grey;
   margin-top: 31px;
-  min-height: 506px;
+  height: 506px;
+  overflow: scroll;
+
 }
 .entry_panel{
   /* display: inline-block; */
@@ -180,9 +182,6 @@ label {
 }
 ul.action{
   float: right;
-}
-.container{
-  margin-bottom: 120px;
 }
 #updater{
   width: 150px;

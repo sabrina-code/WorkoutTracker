@@ -1,7 +1,6 @@
 const create = document.getElementById("create");
 const clear = document.getElementById("clear-all");
 const list = document.getElementById("list");
-// import User from 'mongoose';
 
 function firstLoad() {
     fetch("/all")
@@ -109,38 +108,3 @@ function postUpdate() {
 
     });
 }
-
-
-
-// list.addEventListener("click", function (e) {
-//     if (e.target.matches("#update")) {
-//         element = e.target;
-//         const data_id = element.getAttribute("data-id");
-//         console.log(data_id);
-//         const trail = document.getElementById("dataTrail").value;
-//         // const note = document.getElementById("dataNote").value;
-//         console.log(trail);
-
-
-        // updateOne(data_id, trail, note,
-        //     // asks mongoose to return the updated version instead of the pre-updated one.
-        //     { new: true },
-
-        //     // the callback function
-        //     (err) => {
-        //         // Handle any possible database errors
-        //         if (err) return res.status(500).send(err);
-        //         return res.send(todo);
-        //     }
-        // )
-
-
-
-
-
-
-// <ul class="action">
-// <li onClick="update" id="update" data-id=${data_id}> update </li>
-// <li onClick="done" id="done" data-id=${data_id}> done </li>
-// <li onClick="delete" id="delete" data-id=${data_id}> delete </li>
-// </ul>
