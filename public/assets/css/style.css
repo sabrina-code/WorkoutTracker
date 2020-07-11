@@ -1,32 +1,25 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+p {
+  margin-bottom: 0.5rem;
+}
 h1 {
-  font-size: 60px;
+  font-size: 3rem;
 }
 h2 {
+  font-size: 1.5rem;
   padding: 20px 0;
 }
+.top {
+  background: #0285af;
+}
 .top h1 {
-  margin: 50px 0 10px;
+  padding: 50px 0 10px;
+  color: white;
 }
 .main h2 {
   text-align: left;
-}
-p.dataNote{
-  margin-top: 0;
-  padding-left: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 0px;
-  border-bottom: 1px solid #c7c4c4;
-}
-.dataTrail {
-  padding-left: 15px;
-  line-height: 2em;
-  font-size: 1.5em;
-  background-color: rgb(247, 247, 246);
-}
-label {
-  float: left;
-  margin-left: 15px;
-  margin-top: 15px;
 }
 .title {
   display: block;
@@ -36,8 +29,9 @@ label {
   margin-bottom: 11px;
   display: inline-block;
   width: 100%;
-  height: 50px;
-  font-size: 20px;
+  height: 36px;
+  font-size: 1rem;
+  font-weight: 100;
 }
 .container {
   justify-content: center;
@@ -46,19 +40,20 @@ label {
 }
 .main {
   padding: 100px 0px;
-  /* justify-content: center;
-  align-items: center; */
   text-align: center;
   margin-top: -64px;
+}
+button:focus {
+  outline: 0;
 }
 .btn-primary {
   color: #fff;
   background-color: black;
   border: 0px;
   width: 150px;
-  font-size: 20px;
+  font-size: 1.1rem;
   padding: 8px;
-  margin-top: 60px;
+  margin-top: 30px;
   margin-right: 15px;
   text-align: center;
   display: inline-block;
@@ -126,76 +121,103 @@ hr {
   border-top: 0px;
   height: 46px;
 }
-
 label {
   float: left;
-  font-size: 20px;
+  font-size: 1rem;
   margin-bottom: 2px;
 }
 .form-control::-webkit-input-placeholder,
 .form-control:-ms-input-placeholder,
-.form-control::-ms-input-placeholder 
-{
+.form-control::-ms-input-placeholder {
   color: #8f8f8f;
   opacity: 0.5; /* Firefox */
 }
-.list_panel{
+.list_panel {
   display: inline-block;
   vertical-align: top;
   border: 1px solid grey;
   margin-top: 31px;
-  height: 506px;
+  height: 540px;
   overflow: scroll;
 }
-.entry_panel{
-  /* display: inline-block; */
-  float:right;
+.entry_panel {
+  float: right;
   background-color: #e5e4e4;
   padding: 10px 25px 60px;
   margin-top: 30px;
 }
-#dataEntry{
+#dataEntry {
   border-bottom: 1px solid white;
-}
-#dataTrail{
-  font-size: 1.5em;
-  line-height:2em;
-  padding: 10px 15px;
   background-color: #8db1dd;
+}
+#dataTrail {
+  font-size: 1.3em;
+  line-height: 1.6em;
+  padding: 10px 15px;
   margin-bottom: 0;
 }
-#dataNote{
-  font-size: .75em;
-  line-height:1.5em;
+#time,
+#meet {
+  font-size: 1em;
+  line-height: 1.5em;
   padding: 0px 15px;
-  display: block;
+  display: inline-block;
+  justify-content: left;
+  width: 49%;
   background-color: white;
 }
-#update{
+#dataNote {
+  font-size: 1em;
+  line-height: 1.5em;
+  display: block;
+  text-align: left;
+  background-color: #d7e2ef;
+  margin: 0 10px 20px;
+  padding: 5px;
+}
+.details {
+  text-align: center;
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-around;
+}
+#delete {
+  float: right;
+  padding: 12px;
+}
+#update {
   border: 1px solid rgb(171, 177, 226);
   border-radius: 2px;
   font-size: 1.2em;
   padding: 1px 6px;
   margin: 5px;
 }
-ul.action{
+ul.action {
   float: right;
 }
-.container{
+.container {
   margin-bottom: 120px;
 }
-#updater{
+#updater {
   width: 150px;
   padding: 8px;
   text-align: center;
 }
-button, button:active {
+button,
+button:active,
+button:hover,
+button:active:hover {
   border: 0px solid transparent;
   color: white;
-  background-color:transparent;
+  background-color: transparent;
 }
-@media (min-width: 1200px){
-.container{
-    max-width: 1400px;
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
+@media (max-width: 992px) {
+  .entry_panel {
+    padding: 10px 12px 60px;
+  }
 }
