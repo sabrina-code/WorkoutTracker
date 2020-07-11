@@ -2,7 +2,7 @@
 
 A workout tracker that uses Mongo database with a Mongoose schema and handles routes with Express. This app can view, create and track daily workouts.
 
-![profile](https://github.com/sabrina-code/WorkoutTracker/mybikingplan.jpg)
+![profile](https://github.com/sabrina-code/workoutTracker/blob/master/mybikingplan.jpg)
 
 ## Descriptions
 
