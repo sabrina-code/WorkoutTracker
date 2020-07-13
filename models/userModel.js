@@ -35,5 +35,4 @@ UserSchema.methods.lastUpdatedDate = function () {
 };
 
 const User = mongoose.model("User", UserSchema);
-
 module.exports = User;
