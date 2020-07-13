@@ -1,5 +1,5 @@
 {
-  "name": "custom_methods",
+  "name": "workertraker",
   "version": "1.0.0",
   "description": "A workout tracker that uses Mongo database with a Mongoose schema and handles routes with Express. This app can view, create and track daily workouts.",
   "main": "server.js",
@@ -11,12 +11,19 @@
   "author": "sabrina",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
     "express": "^4.17.1",
     "mongojs": "^3.1.0",
     "mongoose": "^5.9.2",
     "morgan": "^1.9.1",
     "path": "^0.12.7"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabrina-code/17_WorkoutTracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sabrina-code/17_WorkoutTracker/issues"
+  },
+  "homepage": "https://github.com/sabrina-code/17_WorkoutTracker#readme"
 }
