@@ -15,7 +15,8 @@ On page load, a user is able to:
 
 - JavaScript, Express
 - Node
-- Mongo dabase with a Mongoose schema
+- MongoDB
+- Mongoose
 - HTML5
 - CSS3
 - Bootstrap v4.3.1
